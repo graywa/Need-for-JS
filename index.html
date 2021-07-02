@@ -1,20 +1,31 @@
-
 <html lang="en">
-<head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>NeedForJS</title>
-</head>
-<body>
-  <div class="score hide"></div>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>NeedForJS</title>
+  </head>
+  <body>
+    <div class="score hide"></div>
 
-  <div class="game">
-      <div class="start">Click to start</div>
+    <div class="modal hidden">
+      <div class="modal__body">
+        <div class="modal__content"></div>
+        <div>
+          <button class="btn__clear">exit</button>
+        </div>    
+      </div>
+    </div>
+
+    <div class="game">      
+      <div class="start">               
+        <button class="btn" data-level="1">easy</button>
+        <button class="btn" data-level="2">medium</button>
+        <button class="btn" data-level="3">hard</button>
+      </div>
       <div class="gameArea"></div>
-  </div>
- 
-  <script src="./main.js"></script>
-</body>
-</html>
+    </div>
 
+    <script src="./main.js"></script>
+  </body>
+</html>
